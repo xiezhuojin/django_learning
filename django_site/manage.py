@@ -6,6 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
+    # set django config environment variable, which point to current project's settings.py
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_site.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -15,6 +16,7 @@ def main():
             "available on your PYTHONPATH environment variable? Did you "
             "forget to activate a virtual environment?"
         ) from exc
+    # entry point
     execute_from_command_line(sys.argv)
 
 
