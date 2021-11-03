@@ -2147,7 +2147,7 @@
 |   |   |       |-- changepassword.py
 |   |   |       `-- createsuperuser.py
 |   |   |-- middleware.py
-|   |   |-- migrations
+|   |   |-- migrations                                                          (read, all the migrations for app stay here)
 |   |   |   |-- 0001_initial.py
 |   |   |   |-- 0002_alter_permission_name_max_length.py
 |   |   |   |-- 0003_alter_user_email_max_length.py
@@ -5496,7 +5496,7 @@
 |   |   |-- templates.py
 |   |   `-- utils.py
 |   |-- paginator.py
-|   |-- serializers                                                             (read, this is all serializers used in django, you can extend it, for example: protobuf)
+|   |-- serializers                                                             (read, this is all serializers used in django(basically to dump or load data in database), you can extend it, for example: protobuf)
 |   |   |-- __init__.py
 |   |   |-- base.py
 |   |   |-- json.py

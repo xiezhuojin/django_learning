@@ -1,0 +1,1 @@
+*. find out why ```django-admin dumpdata --format yaml``` raise an exception
