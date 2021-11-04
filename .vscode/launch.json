@@ -10,11 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/django_site/manage.py",
             "args": [
-                // FIXME: this command raise an exception
-                "dumpdata",
-                "--format",
-                "yaml",
-                // "runserver"
+                "runserver"
             ],
             "django": true,
             "justMyCode": false
