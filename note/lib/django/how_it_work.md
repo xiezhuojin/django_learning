@@ -1,4 +1,6 @@
 ## How request pass down to view function?(how django route?)
+    * django.core.handlers.base.BaseHandler is the base handle function
+
     * urls.py from project is a list of URLPattern object.
     * how URLPattern and RoutePattern(RegexPattern) works?
         URLPattern
