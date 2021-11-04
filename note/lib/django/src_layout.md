@@ -5720,10 +5720,10 @@
 |   `-- widgets.py
 |-- http
 |   |-- __init__.py
-|   |-- cookie.py
+|   |-- cookie.py                                                               (read, implemented by http cookie, and a cookie parser inside)
 |   |-- multipartparser.py
-|   |-- request.py
-|   `-- response.py
+|   |-- request.py                                                              (read, request class(which all kinds of parser inside))
+|   `-- response.py                                                             (read, all kinds of http response for django, for example: 402, NotAllowed, JsonResponse)
 |-- middleware
 |   |-- __init__.py
 |   |-- cache.py
@@ -5784,10 +5784,10 @@
 |-- urls
 |   |-- __init__.py
 |   |-- base.py
-|   |-- conf.py
+|   |-- conf.py                                                                 (read, include, path, repath live here, path and repath is a wrapper of _path)
 |   |-- converters.py
 |   |-- exceptions.py
-|   |-- resolvers.py
+|   |-- resolvers.py                                                            (#TODO: read this today)
 |   `-- utils.py
 |-- utils
 |   |-- __init__.py
