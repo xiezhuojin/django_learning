@@ -5,15 +5,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Django",
+            "name": "Python: Current File",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/django_site/manage.py",
-            "args": [
-                "runserver"
-            ],
-            "django": true,
-            "justMyCode": false
+            "program": "${file}",
+            "console": "integratedTerminal", 
+            "justMyCode": false,
         }
-    ]
+    ],
+    // "configurations": [
+    //     {
+    //         "name": "Python: Django",
+    //         "type": "python",
+    //         "request": "launch",
+    //         "program": "${workspaceFolder}/django_site/manage.py",
+    //         "args": [
+    //             "runserver"
+    //         ],
+    //         "django": true,
+    //         "justMyCode": false
+    //     }
+    // ]
 }
