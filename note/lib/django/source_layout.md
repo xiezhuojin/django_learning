@@ -5787,7 +5787,7 @@
 |   |-- conf.py                                                                 (read, include, path, repath live here, path and repath is a wrapper of _path)
 |   |-- converters.py
 |   |-- exceptions.py
-|   |-- resolvers.py                                                            (#TODO: read this today)
+|   |-- resolvers.py                                                            (#TODO: continue here)
 |   `-- utils.py
 |-- utils
 |   |-- __init__.py
