@@ -1,7 +1,7 @@
-## ServerHandler(SimpleHandler)
+## ServerHandler(wsgiref.handlers.SimpleHandler)
 > [close] 
 
-## WSGIServer(HTTPServer)
+## WSGIServer(http.server.HTTPServer)
 > [server_bind] override server_bind to store environment by calling [setup_environ]
 
 > [setup_environ] set up base environment, for example: SERVER_NAME, GATEWAY_INTERFACE.
@@ -10,7 +10,7 @@
 
 > [set_app]
 
-## WSGIRequestHandler(BaseHTTPRequestHandler)
+## WSGIRequestHandler(http.server.BaseHTTPRequestHandler)
 > [get_environ] returns env which is extract from it's parent's attribute, for example: self.command, self.headers
 
 > [get_stderr]

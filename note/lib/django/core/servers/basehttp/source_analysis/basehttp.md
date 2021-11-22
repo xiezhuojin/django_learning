@@ -3,13 +3,13 @@
 
 ## is_broken_pipe_error
 
-## WSGIServer(simple_server.WSGIServer)
+## WSGIServer(wsigref.simple_server.WSGIServer)
 > [__init__] override to setup [self.allow_reuse_address]
 
 ## ThreadedWSGIServer(socketserver.ThreadingMixIn, WSGIServer)
 * a threaded version of the WSGIServer with [daemon_threads] set to true
 
-## ServerHandler(simple_server.ServerHandler)
+## ServerHandler(wsgiref.simple_server.ServerHandler)
 > [__init__] wrap stdin into [LimitedStream(stdin, content_length)] so that unread request data will be ignored at the end of request.
 
 > [closeup_headers] HTTP/1.1 requires support for persistent connections. Send `close` if the content length is unknown to prevent clients from reusing the connection.
@@ -18,7 +18,7 @@
 
 > [handle_error]
 
-## WSGIRequestHandler(simple_server.WSGIRequestHandler)
+## WSGIRequestHandler(wsgiref.simple_server.WSGIRequestHandler)
 > [address_string]
 
 > [log_message]

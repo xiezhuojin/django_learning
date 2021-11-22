@@ -21,7 +21,7 @@
 ## StreamRequestHandler(BaseRequestHandler)
 * create read file (buffered) and write (unbuffered) file from connection (request)
 
-## _SocketWriter(BufferIOBase)
+## _SocketWriter(io.BufferIOBase)
 
 ### DatagramRequestHandler(BaseRequestHandler)
 * wrap request (datagram) into read/write file

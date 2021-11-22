@@ -26,7 +26,7 @@
 ## SimleHTTPRequestHandler(BaseHTTPRequestHandler)
 * simple http request handler with GET and HEAD commands. This serves files from given directory (current working directory if not specified) and any of its subdirectories. 
 
-## _url_collapse_path(path)
+## _url_collapse_path
 
 ## executable
 * test given path is executable

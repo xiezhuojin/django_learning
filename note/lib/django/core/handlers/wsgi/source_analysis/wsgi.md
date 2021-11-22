@@ -1,10 +1,10 @@
 ## LimitedStream
 * wrap another stream to disallow reading it past a number of bytes
 
-## WSGIRequest(HttpRequest)
+## WSGIRequest(django.http.HttpRequest)
 <!-- TODO: continue here-->
 
-## WSGIHandler(base.BaseHandler)
+## WSGIHandler(django.core.handlers.base.BaseHandler)
 
 ## get_path_info
 
