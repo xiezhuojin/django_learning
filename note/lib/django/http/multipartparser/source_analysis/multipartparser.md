@@ -8,8 +8,7 @@
 
 > [\__init__] init the MultiPartParser object, which setups [self._boundary], [self._input_data] (from parameter), [self._chunk_size], [self._meta], [self._encoding], [self._content_length], [self._upload_handlers] (from parameter).
 
-> [parse] parse the POST data and break it into a FILES MultiValueDict and a POST MultiValueDict. return a tuple containing the POST and FILES dictionary, respectively.
-<!-- TODO: continue here -->
+> [parse] parse the POST data and break it into a FILES MultiValueDict and a POST MultiValueDict. return a tuple containing the POST and FILES dictionary, respectively. The class is mainly use in [django.http.request] to parse http body.
 
 ## LazyStream
 * The LazyStream wrapper allows one to get and "unget" bytes from a stream.

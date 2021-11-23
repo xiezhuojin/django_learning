@@ -1,5 +1,5 @@
 .env/Lib/site-packages/django
-|-- __init__.py
+|-- __init__.py                                                                 (read, configure logging and populate the app registry.)
 |-- __main__.py
 |-- apps
 |   |-- __init__.py
@@ -5441,15 +5441,15 @@
 |   |   |-- move.py
 |   |   |-- storage.py
 |   |   |-- temp.py
-|   |   |-- uploadedfile.py
-|   |   |-- uploadhandler.py
+|   |   |-- uploadedfile.py                                                     (uploadedfile class)
+|   |   |-- uploadhandler.py                                                    (read, upload file handler)
 |   |   `-- utils.py
 |   |-- handlers                                                                (read, all kinds of handlers define here, including wsgi handler, asgi handler and etc)
 |   |   |-- __init__.py
 |   |   |-- asgi.py
 |   |   |-- base.py                                                             (read, the base django application stay here, which is called BaseHandler, get_response is also important)
 |   |   |-- exception.py
-|   |   `-- wsgi.py                                                             (read, wsgi handler)
+|   |   `-- wsgi.py                                                             (read, wsgi handler, WSGI app)
 |   |-- mail
 |   |   |-- __init__.py
 |   |   |-- backends
@@ -5510,7 +5510,7 @@
 |   |-- signals.py
 |   |-- signing.py
 |   |-- validators.py
-|   `-- wsgi.py
+|   `-- wsgi.py                                                                 (read, there is only one function `get_wsgi_application` which load the default WSGI application, which is django)
 |-- db
 |   |-- __init__.py
 |   |-- backends
