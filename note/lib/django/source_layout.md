@@ -5721,7 +5721,7 @@
 |-- http
 |   |-- __init__.py
 |   |-- cookie.py                                                               (read, implemented by http cookie, and a cookie parser inside)
-|   |-- multipartparser.py
+|   |-- multipartparser.py                                                      (read, parser for post body)
 |   |-- request.py                                                              (read, request class(which all kinds of parser inside))
 |   `-- response.py                                                             (read, all kinds of http response for django, for example: 402, NotAllowed, JsonResponse)
 |-- middleware
