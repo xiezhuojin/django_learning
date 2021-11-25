@@ -6,7 +6,7 @@
 |   |-- config.py
 |   `-- registry.py
 |-- bin
-|   `-- django-admin.py
+|   `-- django-admin.py                                                         (read, deprecated)
 |-- conf
 |   |-- __init__.py
 |   |-- app_template
