@@ -87,9 +87,40 @@ URLResolver is the main class here. Its resolve() method take a URL (as a string
 * check [self.resolve_error_handler]'s signature. (All handlers takes (request, exception) arguments except `handler500` which takes (request)).
 
 > [\_populate]
-* short-circuit if called recursively in this thread to prevent infinite recursion. Concurrent threads may call this at the same time and will need to continue, to set 'populating' on a thread-local variable.
+* populate [self._callback_strs], [self._namespace_dict], [self._app_dict], [self._reverse_dict]
 
+> [reverse_dict]
+* call [self._populate] to get [self._reverse_dict] if [self._reverse_dict] not exists.
 
+> [namespace_dict]
+* call [self._populate] to get [self._populate] if [self._namespace_dict] not exists.
 
-> [url_patterns] (cached property) try to iter [self.urlconf_module] otherwise [self.urlconf_module]
-* check [self.urlconf_module] otherwise [self.urlconf_module] is iterable.
+> [app_dict]
+* call [self._populate] to get [self._app_dict] if [self._app_dict] not exists.
+
+> [\_extend_tried]
+* extend `tried` by `pattern` and `sub_tried` (`pattern` * `sub_tried`).
+
+> [\_join_route]
+* join two routes, without the starting ^ in the second route.
+
+> [\_is_callable]
+* check whether `name` is [self._callback_strs] (if [self._callback_strs] is null call [self._populate] to get it).
+
+> [resolve]
+* return `ResolverMatch` if it find a match of `path`.
+
+> [urlconf_module] (cached property)
+* return [self.urlconf_name] (if [self.urlconf_name] is string, import it first).
+
+> [url_patterns] (cached property)
+* return an iterable of [self.urlconf_module] or [self.urlconf_module.urlpatterns] if [self.urlconf_module.urlpatterns] exists.
+
+> [resolve_error_handler]
+* return resolve error handler based on `view_type`.
+
+> [reverse]
+* just call [self._reverse_with_prefix].
+
+> [\_reverse_with_prefix]
+* return `lookup_view`'s corresponding url.
