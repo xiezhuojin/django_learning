@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "askForPassword": true,
+            "driver": "MySQL",
+            "name": "jeecg-mysql",
+            "database": "sys",
+            "username": "root"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "django_db",
+            "database": "${workspaceFolder:django_learning}/django_site/db.sqlite3"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
