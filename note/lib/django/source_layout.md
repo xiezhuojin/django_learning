@@ -5819,7 +5819,7 @@
 |   |-- ipv6.py
 |   |-- itercompat.py
 |   |-- jslex.py
-|   |-- log.py
+|   |-- log.py                                                                  (read, django logger and log helper functions live here)
 |   |-- lorem_ipsum.py
 |   |-- module_loading.py
 |   |-- numberformat.py
@@ -5828,7 +5828,7 @@
 |   |-- termcolors.py
 |   |-- text.py
 |   |-- timesince.py
-|   |-- timezone.py
+|   |-- timezone.py                                                             (read, timezone-related classes and functions live here)
 |   |-- topological_sort.py
 |   |-- translation
 |   |   |-- __init__.py
@@ -5837,7 +5837,7 @@
 |   |   |-- trans_null.py
 |   |   `-- trans_real.py
 |   |-- tree.py
-|   |-- version.py
+|   |-- version.py                                                              (read, all version info are available here)
 |   `-- xmlutils.py
 `-- views
     |-- __init__.py
