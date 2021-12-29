@@ -1,3 +1,11 @@
 **/__pycache__
 .vscode/dryrun.log
 .vscode/configurationCache.log
+
+# django app package
+**/dist
+**/django_polls.egg-info
+
+# package for virtual env
+**/site-packages/django_polls*
+**/site-packages/polls
