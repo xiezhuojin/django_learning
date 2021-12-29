@@ -20,5 +20,6 @@
             "database": "${workspaceFolder:django_learning}/django_site/db.sqlite3"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "license.author": "kevin"
 }
