@@ -2,7 +2,6 @@
 * wrap another stream to disallow reading it past a number of bytes
 
 ## WSGIRequest(django.http.HttpRequest)
-<!-- TODO: continue here-->
 > [\__init__] setup some instance variable (most of them are not that important, except [self._stream] (LimitedStream), [self._read_started] (set to `False`), [self.resolver_match] (set to `None`))
 
 > [\_get_scheme]
