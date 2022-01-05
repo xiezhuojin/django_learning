@@ -5854,13 +5854,13 @@
     |   |-- http.py
     |   `-- vary.py
     |-- defaults.py
-    |-- generic
+    |-- generic                                                                 (read, generic view)
     |   |-- __init__.py
-    |   |-- base.py
-    |   |-- dates.py
-    |   |-- detail.py
-    |   |-- edit.py
-    |   `-- list.py
+    |   |-- base.py                                                             (read, base generic view class)
+    |   |-- dates.py                                                            (read, generic date view, e.g. /2021/12/30)
+    |   |-- detail.py                                                           (read, generic view for showing single object)
+    |   |-- edit.py                                                             (read, generic view for manipulating single object)
+    |   `-- list.py                                                             (read, generic view for showing multiple object)
     |-- i18n.py
     |-- static.py
     `-- templates
