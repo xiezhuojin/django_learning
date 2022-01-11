@@ -5495,7 +5495,7 @@
 |   |   |-- sql.py
 |   |   |-- templates.py
 |   |   `-- utils.py
-|   |-- paginator.py
+|   |-- paginator.py                                                            (read, paginator)
 |   |-- serializers                                                             (read, this is all serializers used in django(basically to dump or load data in database), you can extend it, for example: protobuf)
 |   |   |-- __init__.py
 |   |   |-- base.py
