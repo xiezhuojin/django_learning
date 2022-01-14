@@ -5791,9 +5791,9 @@
 |   `-- utils.py
 |-- utils
 |   |-- __init__.py
-|   |-- _os.py
-|   |-- archive.py
-|   |-- asyncio.py
+|   |-- _os.py                                                                  (read, do os opearetion, e.g. join path and tell if os support symlink)
+|   |-- archive.py                                                              (read, abstract archive class and some implementation, like tar and zip archive class)
+|   |-- asyncio.py                                                              (read, way to get async event loop, and decorators for marking function async unsafe)
 |   |-- autoreload.py
 |   |-- baseconv.py
 |   |-- cache.py
@@ -5811,7 +5811,7 @@
 |   |-- encoding.py
 |   |-- feedgenerator.py
 |   |-- formats.py
-|   |-- functional.py
+|   |-- functional.py                                                           (read, functional or class decorator for turning function, class, method to be lazy)
 |   |-- hashable.py
 |   |-- html.py
 |   |-- http.py
